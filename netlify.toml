@@ -1,0 +1,11 @@
+[build]
+  command = "pip install -r requirements.txt && echo 'Netlify Functions build (Flask runtime via Functions)'"
+  publish = "static"
+
+[functions]
+  directory = "netlify_functions"
+
+# Note: your Flask app is served via a Netlify Function.
+# You can keep your UI assets in the existing /static folder and templates in /templates.
+
+
